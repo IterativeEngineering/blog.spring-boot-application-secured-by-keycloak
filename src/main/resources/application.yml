@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: http://localhost:9080/realms/spring-boot-app-realm
+        registration:
+          oidc:
+            client-id: spring-boot-app-client
+            client-secret: f6FMRBtxoVRwYnxYBcqFGLK9spxo8p5R
+            scope: openid, profile
